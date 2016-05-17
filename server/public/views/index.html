@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Put that Postgres in that Node</title>
+    <script src="/vendor/jquery.min.js"></script>
+    <script src="/scripts/clientapp.js"></script>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+  <body>
+    <h1>Add a movie</h1>
+    <form id="movieForm">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" />
+
+      <label for="year">Year:</label>
+      <input type="number" id="year" name="year" />
+
+      <label for="genre">Genre:</label>
+      <input type="text" id="genre" name="genre" />
+
+      <label for="director">Director:</label>
+      <input type="text" id="director" name="director" />
+
+      <label for="favorite">Favorite?:</label>
+      <input type="checkbox" id="favorite" name="favorite" />
+
+      <label for="main_actor">Main Actor:</label>
+      <input type="text" id="main_actor" name="main_actor" />
+
+      <button id="movieSubmit">Go</button>
+    </form>
+
+    <h1>Movies</h1>
+    <div id="movieList">
+      <table class="pure-table">
+          <thead>
+              <tr>
+                  <th>Title</th>
+                  <th>Year</th>
+                  <th>Director</th>
+                  <th>Genre</th>
+                  <th>Main Actor</th>
+                  <th>Favorite?</th> 
+              </tr>
+          </thead>
+    </div>
+  </body>
+</html>
